@@ -12,7 +12,7 @@ archive="$APPLICATION-`echo $version | cut -d "v" -f 2`.tar.gz"
 echo $revision > $release/REVISION
 echo $version > $release/VERSION
 
-tar -zcvf $archive -C $release
+tar -zcvf $archive -C $release .
 
 ghr -v
 sh -c "ghr -t $GITHUB_TOKEN -u $gh_user -r $gh_repo -n $version $version $archive"
