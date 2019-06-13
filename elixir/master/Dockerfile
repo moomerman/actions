@@ -4,7 +4,7 @@ LABEL "repository"="https://github.com/moomerman/actions"
 LABEL "homepage"="https://github.com/moomerman/actions/elixir"
 LABEL "maintainer"="Richard Taylor <moomerman@gmail.com>"
 
-LABEL "com.github.actions.name"="Elixir master mix"
+LABEL "com.github.actions.name"="Elixir master"
 LABEL "com.github.actions.description"="An action for running Elixir commands"
 LABEL "com.github.actions.icon"="code"
 LABEL "com.github.actions.color"="purple"
