@@ -9,8 +9,8 @@ version=`echo $revision | cut -d "-" -f 1`.`echo $revision | cut -d "v" -f 2 | c
 release="_build/$MIX_ENV/rel/$APPLICATION"
 archive="$APPLICATION-`cat $version | cut -d "v" -f 2`.tar.gz"
 
-echo $revision > $RELEASE/REVISION
-echo $version > $RELEASE/VERSION
+echo $revision > $release/REVISION
+echo $version > $release/VERSION
 
 tar -zcvjf $archive $release
 
