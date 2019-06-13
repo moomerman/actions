@@ -1,4 +1,5 @@
 #!/bin/sh
-set -e
+set -ex
 
+git --version
 sh -c "git $*"

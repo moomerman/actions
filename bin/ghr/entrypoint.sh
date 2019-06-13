@@ -1,4 +1,5 @@
 #!/bin/sh
-set -e
+set -ex
 
+ghr -v
 sh -c "ghr $*"
