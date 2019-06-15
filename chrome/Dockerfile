@@ -17,6 +17,6 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
 RUN groupadd -r chromeuser \
   && useradd -r -g chromeuser -G audio,video chromeuser \
   && mkdir -p /home/chromeuser/Downloads \
-  && chown -R chromeuser: /home/chromeuser \
+  && chown -R chromeuser: /home/chromeuser
 
 USER chromeuser
