@@ -13,3 +13,11 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
     && apt-get install -y google-chrome-unstable fonts-ipafont-gothic fonts-wqy-zenhei fonts-thai-tlwg fonts-kacst ttf-freefont \
       --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
+
+RUN groupadd -r chromeuser \
+  && useradd -r -g chromeuser \
+  && -G audio,video chromeuser \
+  && mkdir -p /home/chromeuser/Downloads \
+  && chown -R chromeuser: /home/chromeuser \
+
+USER chromeuser
