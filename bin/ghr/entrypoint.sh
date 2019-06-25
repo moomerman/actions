@@ -15,4 +15,4 @@ echo $version > $release/VERSION
 tar -zcvf $archive -C $RELEASE_PATH .
 
 ghr -v
-sh -c "ghr -t $ACTIONS_TOKEN -u $gh_user -r $gh_repo -n $version $version $archive"
+sh -c "ghr -t $GITHUB_TOKEN -u $gh_user -r $gh_repo -n $version $version $archive"
