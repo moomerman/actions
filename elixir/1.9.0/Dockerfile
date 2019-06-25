@@ -10,7 +10,7 @@ LABEL "com.github.actions.icon"="code"
 LABEL "com.github.actions.color"="purple"
 
 # elixir expects utf8.
-ENV ELIXIR_VERSION="1.9.0-rc.0" \
+ENV ELIXIR_VERSION="1.9.0" \
 	LANG=C.UTF-8
 
 RUN set -xe \
